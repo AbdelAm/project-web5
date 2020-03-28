@@ -1,0 +1,125 @@
+@media screen and (max-width: 1024px) {
+    a {
+        font-size: 14px;
+    }
+    .padding {
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+    header nav ul > li {
+        margin-right: 2vw;
+    }
+    header nav ul > li:nth-last-child(1) {
+        margin-left: 1vw;
+    }
+    .notre-approche .our-mission {
+        padding: 25px 0;
+    }
+    .notre-approche .our-mission h1, .notre-approche .our-mission p {
+        width: 85%;
+    }
+    .notre-approche .our-mission .icon .fas, .notre-approche .our-mission .icon .far {
+        font-size: 2em;
+    }
+    .notre-approche .our-mission .details ol {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .padding {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    header nav > ul {
+        display: none;
+    }
+    header nav .mobile-menu-btn {
+        display: block;
+        right: 5%;
+    }
+    header nav .mobile-menu-list {
+        display: block;
+    }
+    .about-us .who-are-we .img {
+        width: 80%;
+    }
+    .about-us .boxes, .notre-equipe .equipe-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-us .boxes .box-3, .notre-equipe .equipe-items .item-3 {
+        grid-column: 1 / 3;
+        width: 50%;
+        justify-self: center;
+    }
+    .notre-approche {
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'item1'
+            'item1'
+            'item2'
+            'item3'
+            'item4';
+    }
+    .notre-approche .our-mission:nth-child(1) {
+        text-align: center;
+    }
+    .notre-approche .our-mission:nth-child(1) h1 {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .about-us .boxes, .notre-equipe .equipe-items {
+        grid-template-columns: 1fr
+    }
+    .about-us .boxes .box-3, .notre-equipe .equipe-items .item-3 {
+        grid-column: unset;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .padding {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+    header .slider .intro {
+        text-align: center;
+        width: 95%;
+    }
+    .about-us .who-are-we .description {
+        text-align: center;
+    }
+    .about-us .who-are-we .description hr {
+        margin: 35px auto;
+    }
+    .notre-approche .our-mission {
+        grid-template-columns: 1fr;
+    }
+    .notre-approche .our-mission:nth-child(1) {
+        padding: 50px 0;
+    }
+    .notre-approche .our-mission h1, .notre-approche .our-mission p {
+        width: 90%;
+    }
+    .notre-approche .our-mission .icon {
+        margin-bottom: 25px;
+    }
+    .notre-approche .our-mission .icon .fas, .notre-approche .our-mission .icon .far {
+        font-size: 3em;
+    }
+    .notre-approche .our-mission .details {
+        text-align: center;
+        padding-left: 0;
+    }
+    .notre-approche .our-mission .details ol {
+        padding: 0 30px;
+    }
+    .nos-references .carrousel .carrousel-container .carrousel-items {
+        grid-template-columns: repeat(9, 50%);
+    }
+    .quote h1 {
+        font-size: 25px;
+    }
+}
